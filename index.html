@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İntens İnşaat Mühendislik</title>
+<meta name="description" content="İntens İnşaat Mühendislik — inşaat ve mühendislik hizmetleri.">
+<meta name="theme-color" content="#08090A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,500;125,800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    height: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    background: #08090A;
+  }
+  .bg {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .logo {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+    padding: 0 16px;
+    font-family: "Archivo", system-ui, sans-serif;
+    font-stretch: 125%;
+    font-size: clamp(48px, 14vw, 280px);
+    text-align: center;
+    white-space: nowrap;
+  }
+  .logo-name {
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    margin-right: -0.04em;
+    color: #E4E7EA;
+    line-height: 1;
+  }
+  .logo-tag {
+    font-size: clamp(10px, 1.6vw, 30px);
+    font-weight: 500;
+    letter-spacing: 0.42em;
+    margin-right: -0.42em;
+    color: #C29A62;
+    line-height: 1;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bg { display: none; }
+    body {
+      background: #08090A url("intens-poster.jpg") center / cover no-repeat;
+    }
+  }
+</style>
+</head>
+<body>
+  <video class="bg" autoplay muted loop playsinline poster="intens-poster.jpg" aria-hidden="true">
+    <source src="intens-arkaplan.mp4" type="video/mp4">
+  </video>
+  <div class="logo" role="img" aria-label="İntens İnşaat Mühendislik">
+    <span class="logo-name">İNTENS</span>
+    <span class="logo-tag">İNŞAAT · MÜHENDİSLİK</span>
+  </div>
+</body>
+</html>
