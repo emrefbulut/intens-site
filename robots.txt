@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://intens.com.tr/sitemap.xml
